@@ -57,12 +57,12 @@ List* get_adj_nodes(Node* n)
   {
     for(int j = 0; j < 9; j++)
     {
-      if(n[i][j] == 0)
+      if(n->sodu[i][j] == 0)
       {
         for(int l = 1; l<=9; l++)
         {
           auxEstado = copy(n);
-          auxEstado[i][j] = l;
+          auxEstado->sodu[i][j] = l;
           if(is_valid(auxEstado) == 0)
           {
             pushBack(list, auxEstado);

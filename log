@@ -41,3 +41,16 @@ sudoku.c:65:23: error: subscripted value is neither array nor pointer nor vector
       |                       ^
 Compilation failed
 d9aafba
+Tue 25 Oct 2022 06:20:18 PM UTC: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:60:11: error: ‘Node’ has no member named ‘sodu’
+   60 |       if(n->sodu[i][j] == 0)
+      |           ^~
+sudoku.c:65:20: error: ‘Node’ has no member named ‘sodu’
+   65 |           auxEstado->sodu[i][j] = l;
+      |                    ^~
+Compilation failed
+f5b3627
