@@ -54,3 +54,9 @@ sudoku.c:65:20: error: ‘Node’ has no member named ‘sodu’
       |                    ^~
 Compilation failed
 f5b3627
+Tue 25 Oct 2022 06:21:15 PM UTC: 
+ sudoku.c | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+ tests:  0|5
+total_score: 0/70
+257ff0d
