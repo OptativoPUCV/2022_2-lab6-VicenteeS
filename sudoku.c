@@ -53,9 +53,9 @@ List* get_adj_nodes(Node* n)
 {
   List* list=createList();
   Node *auxEstado;
-  for(int i = 0; i <= 9; i++)
+  for(int i = 0; i < 9; i++)
   {
-    for(int j = 0; j <= 9; j++)
+    for(int j = 0; j < 9; j++)
     {
       if(n[i][j] == 0)
       {
@@ -72,9 +72,7 @@ List* get_adj_nodes(Node* n)
       }
     }
   }
-    
-      
-  
+
   return list;
 }
 

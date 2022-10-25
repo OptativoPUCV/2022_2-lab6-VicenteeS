@@ -28,3 +28,16 @@ sudoku.c:65:23: error: subscripted value is neither array nor pointer nor vector
       |                       ^
 Compilation failed
 4158014
+Tue 25 Oct 2022 06:19:12 PM UTC: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:60:14: error: subscripted value is neither array nor pointer nor vector
+   60 |       if(n[i][j] == 0)
+      |              ^
+sudoku.c:65:23: error: subscripted value is neither array nor pointer nor vector
+   65 |           auxEstado[i][j] = l;
+      |                       ^
+Compilation failed
+d9aafba
