@@ -66,7 +66,7 @@ List* get_adj_nodes(Node* n)
           
           auxEstado->sudo[i][j] = l;
           
-          if(is_valid(auxEstado) == 0)
+          if(is_valid(auxEstado) == 1)
           {
             pushBack(list, auxEstado);
           }
