@@ -2,3 +2,16 @@ Sun 09 Oct 2022 11:52:39 PM UTC:
  tests:  0|5
 total_score: 0/70
 d1072af
+Tue 25 Oct 2022 06:16:47 PM UTC: 
+ sudoku.c | 26 +++++++++++++++++++++++++-
+ 1 file changed, 25 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:60:14: error: subscripted value is neither array nor pointer nor vector
+   60 |       if(n[i][j] == 0)
+      |              ^
+sudoku.c:65:23: error: subscripted value is neither array nor pointer nor vector
+   65 |           auxEstado[i][j] = l;
+      |                       ^
+Compilation failed
+4fb6578

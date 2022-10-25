@@ -49,9 +49,33 @@ int is_valid(Node* n){
 }
 
 
-List* get_adj_nodes(Node* n){
-    List* list=createList();
-    return list;
+List* get_adj_nodes(Node* n)
+{
+  List* list=createList();
+  Node *auxEstado;
+  for(int i = 0; i <= 9; i++)
+  {
+    for(int j = 0; j <= 9; j++)
+    {
+      if(n[i][j] == 0)
+      {
+        for(int l = 1; l<=9; l++)
+        {
+          auxEstado = copy(n);
+          auxEstado[i][j] = l;
+          if(is_valid(auxEstado) == 0)
+          {
+            pushBack(list, auxEstado);
+          }
+        }
+        return(list);
+      }
+    }
+  }
+    
+      
+  
+  return list;
 }
 
 
